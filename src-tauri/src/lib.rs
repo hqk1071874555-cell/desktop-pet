@@ -2,6 +2,7 @@ mod input;
 mod gamepad;
 mod affection;
 
+#[allow(unused_imports)]
 use tauri::Manager;
 use std::sync::Mutex;
 use affection::AffectionStore;

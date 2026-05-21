@@ -32,6 +32,7 @@ impl Default for AffectionState {
 
 impl AffectionState {
     /// 记录输入。返回 Some(表情名) 表示解锁了新表情
+    #[allow(dead_code)]
     pub fn add_input(&mut self, count: f32) -> Option<String> {
         self.total_inputs = (self.total_inputs as f32 + count) as u64;
         let new_level = (self.total_inputs / 1000) as u32;
